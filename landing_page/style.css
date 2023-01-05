@@ -1,0 +1,295 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700;800&display=swap");
+
+body,
+html {
+  font-family: "Jost", sans-serif;
+}
+
+:root {
+  --font-size: 15px;
+  --padding: 8px 16px;
+}
+
+#web {
+  padding: 8px 16px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+#navbar {
+  overflow: hidden;
+  top: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  display: flex;
+  color: #000;
+  justify-content: space-between;
+  padding: var(--padding);
+  background-color: #fff;
+  font-size: var(--font-size);
+  letter-spacing: 4px;
+  box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+}
+
+#navbar .logo a {
+  padding: var(--padding);
+  cursor: pointer;
+  color: #000;
+  align-items: center;
+  line-height: 37.6px;
+}
+
+#navbar .logo a:visited {
+  color: #000;
+}
+
+#navbar .logo a:hover {
+  background-color: #ccc;
+}
+
+#navbar .nav-items {
+  display: flex;
+  align-items: center;
+}
+
+#navbar .nav-items li {
+  padding: var(--padding);
+}
+
+#navbar .nav-items li:hover {
+  background-color: #ccc;
+}
+
+#navbar .nav-items li a {
+  padding: var(--p-816);
+  color: #000;
+}
+
+#navbar .nav-items li a:visited {
+  color: #000;
+}
+
+#hero {
+  position: relative;
+}
+
+#hero img {
+  width: 100%;
+  /* max-width = 1500px */
+}
+
+#hero h2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  letter-spacing: 4px;
+  font-size: 36px;
+}
+
+#hero h2 b {
+  background-color: #000;
+  padding: 8px 16px;
+  opacity: 0.75;
+}
+
+#projects {
+}
+
+.heading3 {
+  font-size: 24px;
+  margin: 10px 0;
+  padding: 16px 0;
+  border-bottom: 1px solid #ccc;
+  border-color: #f1f1f1;
+}
+
+#projects .container {
+  padding: 32px 16px;
+  padding-inline: 1rem;
+}
+
+#projects ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#projects ul li {
+  width: calc(100% / 4 - 1rem);
+  height: 100%;
+  position: relative;
+  margin: 0 8px 8px;
+}
+
+#projects ul li img {
+  width: 100%;
+}
+
+#projects ul li .flag {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: var(--padding);
+  background-color: #000;
+  color: #fff;
+  font-size: var(--font-size);
+  text-transform: capitalize;
+}
+
+#about {
+}
+
+#about .about {
+  padding: 32px 16px;
+}
+
+#about .about-decription {
+  font-size: var(--font-size);
+  margin: 15px 0;
+}
+
+#about ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#about ul li {
+  width: calc(100% / 4 - 1rem);
+  margin: 0 8px 8px;
+}
+
+#about ul li img {
+  width: 100%;
+}
+
+#about .name {
+  font-size: 24px;
+  color: #000;
+  margin: 5px 0 0;
+  display: block;
+}
+
+#about .job {
+  font-size: var(--font-size);
+  margin: 15px 0;
+  opacity: 0.6;
+}
+
+#about .job-decription {
+  font-size: var(--font-size);
+  margin: 0 0 15px;
+}
+
+#about .contact {
+  padding: 8px 16px;
+  border: none;
+  text-align: center;
+  font-size: var(--font-size);
+  cursor: pointer;
+  width: 100%;
+  background-color: #f1f1f1;
+  transition: linear;
+}
+
+#about .contact:hover {
+  background-color: #ccc;
+}
+
+#contact {
+  padding: 32px 16px;
+}
+
+#contact .form-contact input {
+  padding: 8px;
+  width: 100%;
+  margin: 16px 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  display: block;
+}
+
+#contact button {
+  font-size: var(--font-size);
+  margin: 16px 0;
+  padding: 8px 16px;
+  border: none;
+  background-color: #000;
+  color: #fff;
+}
+
+#contact button:hover {
+  background-color: #ccc;
+  color: #000;
+}
+
+#map img {
+  width: 100%;
+  margin: 20pxx;
+}
+
+#footer {
+  padding: 16px 0;
+  width: 100%;
+  background-color: #000;
+}
+
+#footer .footer {
+  text-align: center;
+  color: #fff;
+  font-size: var(--font-size);
+  width: 100%;
+}
+
+#footer p {
+  margin: 15px 0;
+}
+
+#footer a {
+  text-decoration: underline;
+}
+
+/* responsive */
+/* tablet */
+
+@media only screen and (max-width: 992px) {
+  #projects ul li {
+    width: calc(100% / 2 - 1rem);
+    height: 100%;
+    position: relative;
+    margin: 0 8px 8px;
+  }
+  #about ul li {
+    width: calc(100% / 2 - 1rem);
+    margin: 0 8px 8px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #navbar .nav-items {
+    display: none;
+  }
+
+  #hero h2 span {
+    display: none;
+  }
+
+  #projects ul li {
+    width: calc(100% - 1rem);
+    height: 100%;
+    position: relative;
+    margin: 0 8px 8px;
+  }
+  #about ul li {
+    width: calc(100% - 1rem);
+    margin: 0 8px 8px;
+  }
+}

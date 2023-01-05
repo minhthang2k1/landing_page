@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css  -->
+    <link rel="stylesheet" href="./style.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- nav  -->
+    <nav class="navbar-nav nav">
+        <div class="row">
+            <div class="logo-text col-6">
+                <a href="" class="navbar-brand text-danger px-3 py-2">
+                    <i class="fa-solid fa-location-dot"></i>
+                    Logo
+                </a>
+            </div>
+            <div class="search col-6 text-end">
+                <i class="fa-sharp fa-solid fa-magnifying-glass px-3 py-2">
+                </i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- hero -->
+    <div class="hero d-none d-sm-block">
+        <img src="./assets/london2.jpg" alt="hero">
+        <div class="booking row border-dark">
+            <ul class="booking-items row bg-dark">
+                <li class="col-4 px-3 py-2 flightBtn">
+                    <button>
+                        <i class="fa-solid fa-plane"></i>
+                        Flight
+                    </button>
+                </li>
+                <li class="col-4 px-3 py-2 hotelBtn">
+                    <button>
+                        <i class="fa-solid fa-bed"></i>
+                        Hotel
+                    </button>
+                </li>
+                <li class="col-4 px-3 py-2 rentalBtn">
+                    <button>
+                        <i class="fa-solid fa-car"></i>
+                        Rental
+                    </button>
+                </li>
+            </ul>
+            <div class="booking-body bg-light p-3 flightbooking">
+                <h3 class="m-2">Travel the world with us</h3>
+                <div class="row">
+                    <div class="col-6 px-2">
+                        <label for="from">From</label> <br>
+                        <input class="p-2" type="text" name="" id="from" placeholder="Departing from">
+                    </div>
+                    <div class="col-6 px-2">
+                        <label for="to">To</label> <br>
+                        <input class="p-2" type="text" name="" id="to" placeholder="Arriving at">
+                    </div>
+                </div>
+                <button class="btn btn-secondary my-3 ">Search and find dates</button>
+            </div>
+            <div class="booking-body bg-light p-3 hotelbooking">
+                <h3>Find the best hotels</h3>
+
+                <p>Book a hotel with us and get the best fares and promotions.</p>
+                <p>We know hotels - we know comfort.</p>
+                <button class="btn btn-secondary my-3">Search Hotels</button>
+            </div>
+            <div class="booking-body bg-light p-3 rentalbooking">
+                <h3>Best car rental in the world!</h3>
+                <p>
+                    <span>DISCOUNT!</span> Special offer if you book today: 25% off anywhere in the world with
+                    CarServiceRentalRUs
+                </p>
+                <input type="text" placeholder="Pick-up point" id="" class="form-control">
+                <button class="btn btn-secondary my-3">Search Availability</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- offer -->
+    <div class="offers container-fluid">
+        <div class="">
+            <h3 class="my-2">Good Offers Right Now</h3>
+            <h6 class="my-2">Up to 50% discount.</h6>
+        </div>
+        <div class="row">
+            <div class="col-12 col-sm-6">
+                <img src="./assets/cinqueterre.jpg" alt="">
+            </div>
+            <div class="col-12 col-sm-6 mt-sm-0 mt-4">
+                <div class="row">
+                    <div class="col-12 col-sm-6 mt-sm-0">
+                        <img src="./assets/newyork2.jpg" alt="">
+                    </div>
+                    <div class="col-12 col-sm-6 mt-sm-0 mt-4">
+                        <img src="./assets/sanfran.jpg" alt="">
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-12 col-sm-6">
+                        <img src="./assets/pisa.jpg" alt="">
+                    </div>
+                    <div class="col-12 col-sm-6 mt-sm-0 mt-4">
+                        <img src="./assets/paris.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- explore -->
+    <div class="explore container-fluid">
+        <h3>Explore Nature</h3>
+        <p>Travel with us and see nature at its finest.</p>
+        <div class="row">
+            <div class="col-12 col-sm-6">
+                <div class="bg-secondary">
+                    <img src="./assets/ocean2.jpg" alt="">
+                    <h3>West Coast, Norway</h3>
+                    <p>Roundtrip from $79</p>
+                    <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                    <button class="btn btn-success">Buy Tickets</button>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 bg-light mt-4 mt-sm-0">
+                <img src="./assets/mountains2.jpg" alt="">
+                <h3>Mountains, Austria</h3>
+                <p>One-way from $39</p>
+                <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                <button class="btn btn-success">Buy Tickets</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- subcribe -->
+    <div id="new-letter" class="container-fluid my-3">
+        <div class="wrapper bg-dark">
+            <div class="row p-3">
+                <h2 class="text-light my-2">Get the best offers first!</h2>
+                <p class="text-light my-3">Join our newsletter.</p>
+            </div>
+            <form class="px-3">
+                <label for="email" class="text-light">E-mail</label><br>
+                <input class="p-2" type="email" name="" id="email" placeholder="Your Email address">
+                <button class="btn btn-danger my-3 py-2 px-3">Subcribe</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- contact -->
+    <div id="contact" class="container-fluid mt-3">
+        <h2>Contact</h2>
+        <p>Let us book your next trip!</p>
+        <div class="contact-info">
+            <div class="info">
+                <i class="fa-solid fa-location-dot"></i>
+                <span>Chicago, US</span>
+            </div>
+            <div class="info">
+                <i class="fa-solid fa-phone"></i>
+                <span>Phone: +00 151515</span>
+            </div>
+            <div class="info">
+                <i class="fa-solid fa-envelope"></i>
+                <span>Email: mail@mail.com</span>
+            </div>
+        </div>
+        <form class="my-3">
+            <input type="text" placeholder="NAME" class="form-control mb-3" required>
+            <input type="email" placeholder="Email" class="form-control mb-3" required>
+            <input type="text" placeholder="MESSAGE" class="form-control mb-3" required>
+            <button class="btn btn-dark">SEND MESSAGE</button>
+        </form>
+    </div>
+
+    <!-- footer -->
+    <div id="footer" class="text-center">
+        <h5 class="my-2">Find Us On</h5>
+        <div class="social-media py-3">
+            <i class="fa-brands fa-square-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-square-snapchat"></i>
+            <i class="fa-brands fa-square-pinterest"></i>
+            <i class="fa-brands fa-square-twitter"></i>
+            <i class="fa-brands fa-linkedin"></i>
+        </div>
+        <p>Powerd by <a href="" class="text-secondary my-3">w3.css</a></p>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
